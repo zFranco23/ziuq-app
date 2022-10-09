@@ -4,22 +4,30 @@
 div.wrapProgress {
     display: flex;
     align-items: center;
-
+    width: 100%;
 
     div.progressBarContainer {
-        background: #EDE8E3;
+        background-color: $white;
         border-radius: 16px;
         height: 16px;
+        width: 85%;
         overflow: hidden;
-        width: 10rem;
-        margin-right: 1rem;
+
+        @media (min-width: 768px){
+            background: #EDE8E3;
+        }
 
         div.progressBar {
-            width: 20px;
+            width: 100%;
             border-radius: 16px;
             height: 16px;
             background-color: $green;
             transition: all 0.5s ease-in-out
         }
+    }
+
+    p.progressCount {
+        width: 15%;
+        text-align: center;
     }
 }

@@ -1,0 +1,61 @@
+
+@import '../../styles/colors.scss';
+
+
+button.answerButton {
+    margin: 8px 0;
+    background: #F4F3F6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 16px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: darken($color: #F4F3F6, $amount: 1)
+    }
+
+    &.answerSuccess {
+        background-color: $success;
+
+        div.order {
+            background-color: $white;
+
+            i {
+                color: $green;
+            }
+        }
+        div.answerText {
+            p {
+                color: $white;
+            }
+        }
+    }
+
+    div.order {
+        background-color: #EDE8E3;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        i {
+            transition: all 0.3s ease-in-out;
+        }
+        & span {
+            margin: 0;
+        }
+    }
+
+    div.answerText {
+        margin-left: 1rem;
+
+        p {
+            color: #000000;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}

@@ -13,12 +13,20 @@ div.wrapFooter {
         align-items: center;
 
         @media (min-width: 768px){
-            max-width: 65%;
+            max-width: 80%;
             margin: 0 auto;
             justify-content: space-between;
             & > button {
                 width: 15rem;
             }
         } 
+
+        @media (min-width: 1200px){
+            max-width: 65%;
+        } 
+
+        div.containerProgress {
+            width:20rem;
+        }
     }
 }
