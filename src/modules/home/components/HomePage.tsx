@@ -1,8 +1,14 @@
 import React from 'react'
+import BottomBar from '../../../components/BottomBar/BottomBar'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      HomePage
+      <BottomBar>
+        <div>hola</div>
+      </BottomBar>
+    </div>
   )
 }
 
